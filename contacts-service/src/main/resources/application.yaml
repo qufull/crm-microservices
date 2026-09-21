@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: contacts-service
+server:
+  port: 8082
