@@ -12,14 +12,14 @@ buildNumber.properties
 .mvn/timing.properties
 
 # Разрешаем Git отслеживать Maven Wrapper и его jar
-!.mvn/wrapper/maven-wrapper.jar
-!**/mvnw
-!**/mvnw.cmd
+.mvn/wrapper/maven-wrapper.jar
+**/mvnw
+**/mvnw.cmd
 
 # -----------------------------
 # IntelliJ IDEA
 # -----------------------------
-.idea/
+.idea
 *.iws
 *.iml
 *.ipr
