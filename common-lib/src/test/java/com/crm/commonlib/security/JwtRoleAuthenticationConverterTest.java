@@ -1,5 +1,6 @@
 package com.crm.commonlib.security;
 
+import com.crm.commonlib.security.jwt.JwtRoleAuthenticationConverter;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.oauth2.jwt.Jwt;

@@ -1,5 +1,7 @@
 package com.crm.commonlib.security;
 
+import com.crm.commonlib.security.jwt.AuthenticatedUser;
+import com.crm.commonlib.security.jwt.AuthenticatedUserFactory;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.oauth2.jwt.Jwt;
 

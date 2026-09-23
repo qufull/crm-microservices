@@ -1,4 +1,4 @@
-package com.crm.commonlib.security;
+package com.crm.commonlib.security.jwt;
 
 import org.springframework.security.oauth2.jwt.Jwt;
 

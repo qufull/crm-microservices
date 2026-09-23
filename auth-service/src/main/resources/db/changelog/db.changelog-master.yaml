@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1-create-users
+      author: crm-pet-project
+      changes:
+        - sqlFile:
+            path: db/changelog/sql/01-create-users.sql
+            # path указывается от корня папки resources

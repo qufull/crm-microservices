@@ -13,9 +13,11 @@
     <spring-boot.version>3.2.5</spring-boot.version>
     <spring-cloud.version>2023.0.1</spring-cloud.version>
     <nimbus-jose-jwt.version>9.37.3</nimbus-jose-jwt.version>
+    <lombok.version>1.18.46</lombok.version>
   </properties>
 
   <modules>
+    <module>common-error</module>
     <module>common-lib</module>
     <module>discovery-server</module>
     <module>auth-service</module>
@@ -39,18 +41,31 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+        <optional>true</optional>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
   <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-maven-plugin</artifactId>
-          <version>${spring-boot.version}</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+        <configuration>
+          <annotationProcessorPaths>
+            <path>
+              <groupId>org.projectlombok</groupId>
+              <artifactId>lombok</artifactId>
+              <version>${lombok.version}</version>
+            </path>
+          </annotationProcessorPaths>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>

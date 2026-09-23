@@ -62,6 +62,15 @@
             <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.crm</groupId>
+            <artifactId>common-error</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
